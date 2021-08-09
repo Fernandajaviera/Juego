@@ -1,5 +1,10 @@
 eleccion_del_usuario = ARGV[0]
 
+if eleccion_del_usuario != "piedra" and eleccion_del_usuario != "tijera" and eleccion_del_usuario != "papel" 
+  puts "Elección erronea, escribir piedra, papel o tijera"
+  exit
+end
+
 puts ">>> eleccion_del_usuario: #{eleccion_del_usuario}"
 
 eleccion_del_pc = Random.rand(3)
